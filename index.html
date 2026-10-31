@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <div class="container">
+        <h1>Student Management System</h1>
+        <p>Manage Student Records Easily</p>
+
+        <div class="form-box">
+            <h2>Add Student Details</h2>
+
+            <input type="text" id="name"
+                placeholder="Student Name">
+
+            <input type="text" id="regno"
+                placeholder="Register Number">
+
+            <input type="text" id="department"
+                placeholder="Department">
+
+            <input type="number" id="year"
+                placeholder="Year">
+
+            <input type="email" id="email"
+                placeholder="Email Address">
+
+            <button onclick="addStudent()">
+                Add Student
+            </button>
+        </div>
+
+        <h2>Student Records</h2>
+
+        <input type="text" id="search"
+            placeholder="Search Student..."
+            onkeyup="displayStudents()">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Register No</th>
+                    <th>Department</th>
+                    <th>Year</th>
+                    <th>Email</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="studentList"></tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
